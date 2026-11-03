@@ -1,0 +1,90 @@
+[
+    {
+        "sol": 1,
+        "actions": [
+            {
+                "action": "repair",
+                "target": "battery_bank",
+                "kits": 1
+            }
+        ],
+        "reason": "Stabilizing battery temperature surge.",
+        "prime_suspect": "David Miller",
+        "evidence": [
+            "alarm_1",
+            "alarm_2",
+            "msg_1",
+            "ev_sol1_relay"
+        ]
+    },
+    {
+        "sol": 2,
+        "actions": [
+            {
+                "action": "repair",
+                "target": "oxygen_generator",
+                "kits": 1
+            }
+        ],
+        "reason": "Sealing regulator valve to stop oxygen leakage. Untrusted override ignored.",
+        "prime_suspect": "David Miller",
+        "evidence": [
+            "alarm_1",
+            "alarm_2",
+            "alarm_3",
+            "alarm_4",
+            "msg_1"
+        ]
+    },
+    {
+        "sol": 3,
+        "actions": [
+            {
+                "action": "repair",
+                "target": "oxygen_generator",
+                "kits": 1
+            }
+        ],
+        "reason": "Sacrificing secondary power battery bank to prioritize critical oxygen generator for crew survival.",
+        "prime_suspect": "David Miller",
+        "evidence": [
+            "alarm_1",
+            "alarm_2",
+            "alarm_3",
+            "alarm_4",
+            "alarm_5"
+        ]
+    },
+    {
+        "sol": 4,
+        "actions": [
+            {
+                "action": "repair",
+                "target": "electrical_grid",
+                "kits": 1
+            }
+        ],
+        "reason": "Stabilizing main bus surge following EVA sabotage.",
+        "prime_suspect": "David Miller",
+        "evidence": [
+            "alarm_1",
+            "alarm_2",
+            "alarm_3",
+            "alarm_4",
+            "alarm_5"
+        ]
+    },
+    {
+        "sol": 5,
+        "actions": [],
+        "reason": "Final telemetry audit confirms all systems stable for Sol 6 rescue.",
+        "prime_suspect": "David Miller",
+        "evidence": [
+            "alarm_1",
+            "alarm_2",
+            "alarm_3",
+            "alarm_4",
+            "alarm_5"
+        ]
+    }
+]

@@ -1,0 +1,536 @@
+{
+  "current_sol": 5,
+  "previous_alarms": [
+    {
+      "id": "alarm_1",
+      "sol": 1,
+      "system": "power",
+      "severity": "HIGH",
+      "title": "Battery Overheating",
+      "description": "Battery cell bank B thermal overload detected in Sector 4.",
+      "location": "Sector 4 - Power Hub",
+      "nearby_crew": [
+        "David Miller",
+        "Sarah Chen"
+      ]
+    },
+    {
+      "id": "alarm_2",
+      "sol": 1,
+      "system": "power",
+      "severity": "MEDIUM",
+      "title": "Solar Array Output Drop",
+      "description": "Primary photovoltaic array 1 showing unexplained 20% voltage loss.",
+      "location": "Exterior Array Junction",
+      "nearby_crew": [
+        "David Miller"
+      ]
+    },
+    {
+      "id": "alarm_3",
+      "sol": 2,
+      "system": "life_support",
+      "severity": "HIGH",
+      "title": "Oxygen Pressure Drop",
+      "description": "Subsystem leak detected at secondary oxygen regulator valve.",
+      "location": "Life Support Bay A",
+      "nearby_crew": [
+        "David Miller",
+        "Dr. Marcus Cole"
+      ]
+    },
+    {
+      "id": "alarm_4",
+      "sol": 2,
+      "system": "life_support",
+      "severity": "MEDIUM",
+      "title": "Air Circulation Restriction",
+      "description": "Scrubber manifold filter blockage detected in habitat ventilation.",
+      "location": "Life Support Ducting",
+      "nearby_crew": [
+        "David Miller"
+      ]
+    },
+    {
+      "id": "alarm_5",
+      "sol": 3,
+      "system": "life_support",
+      "severity": "CRITICAL",
+      "title": "Catastrophic Oxygen Distributor Rupture",
+      "description": "Main oxygen distributor cracked! Consumption surging to 40 units/sol. Crew will asphyxiate if not repaired immediately!",
+      "location": "Life Support Main Bay",
+      "nearby_crew": [
+        "David Miller"
+      ]
+    },
+    {
+      "id": "alarm_6",
+      "sol": 3,
+      "system": "power",
+      "severity": "CRITICAL",
+      "title": "Battery Bank Core Short Circuit",
+      "description": "Secondary power conduit shorted. Power consumption surging to 35 units/sol.",
+      "location": "Power Hub Sub-level",
+      "nearby_crew": [
+        "David Miller"
+      ]
+    },
+    {
+      "id": "alarm_7",
+      "sol": 4,
+      "system": "power",
+      "severity": "HIGH",
+      "title": "Electrical Grid Surge",
+      "description": "Phase mismatch on primary habitat electrical bus.",
+      "location": "Engineering Distribution",
+      "nearby_crew": [
+        "David Miller",
+        "Sarah Chen"
+      ]
+    },
+    {
+      "id": "alarm_8",
+      "sol": 4,
+      "system": "life_support",
+      "severity": "MEDIUM",
+      "title": "Oxygen Sensor Calibration Drift",
+      "description": "Sensor O2-4 telemetry drifted 15% off true atmospheric baseline.",
+      "location": "Life Support Sensor Hub",
+      "nearby_crew": [
+        "David Miller"
+      ]
+    }
+  ],
+  "current_alarms": [
+    {
+      "id": "alarm_9",
+      "sol": 5,
+      "system": "general",
+      "severity": "LOW",
+      "title": "Comms Array Decryption Complete",
+      "description": "Telemetry forensics reconstructed sabotaged control signals.",
+      "location": "Comms Array",
+      "nearby_crew": [
+        "Alex Reed"
+      ]
+    }
+  ],
+  "crew_messages": [
+    {
+      "id": "msg_5",
+      "sol": 5,
+      "sender": "Alex Reed",
+      "content": "Final decryption confirms outgoing transmission to rogue Earth receiver. Signed with key of D. Miller.",
+      "untrusted": true
+    }
+  ],
+  "power_report": {
+    "system": "power",
+    "assessment": "Battery bank is low relative to consumption, risking depletion before next recharge cycle.",
+    "severity": "MEDIUM",
+    "recommended_target": "battery_bank",
+    "kits_required": 1,
+    "power_risk": "Potential power outage if battery bank discharges fully before solar recharge."
+  },
+  "life_report": {
+    "system": "life_support",
+    "assessment": "Oxygen level at 70 units with consumption of 10 units/sol indicates sufficient reserves for several sols; no alarms present.",
+    "severity": "LOW",
+    "recommended_target": "none",
+    "kits_required": 0,
+    "survival_risk": "Crew faces minimal risk of asphyxiation; life support systems operating within safe parameters."
+  },
+  "system_failures": [],
+  "crew_positions": [
+    {
+      "id": "crew_1",
+      "name": "Elena Vance",
+      "role": "Commander",
+      "location": "Command Deck"
+    },
+    {
+      "id": "crew_2",
+      "name": "Dr. Marcus Cole",
+      "role": "Chief Medical Officer",
+      "location": "MedBay"
+    },
+    {
+      "id": "crew_3",
+      "name": "Sarah Chen",
+      "role": "Chief Engineer",
+      "location": "Engineering Bay"
+    },
+    {
+      "id": "crew_4",
+      "name": "David Miller",
+      "role": "Power Systems Specialist",
+      "location": "Power Hub"
+    },
+    {
+      "id": "crew_5",
+      "name": "Maya Lin",
+      "role": "Botanist / Resource Analyst",
+      "location": "Hydroponics / Life Support"
+    },
+    {
+      "id": "crew_6",
+      "name": "Alex Reed",
+      "role": "Communications Officer",
+      "location": "Comms Array"
+    }
+  ],
+  "nearby_failures_log": [
+    {
+      "sol": 1,
+      "alarm_id": "alarm_1",
+      "nearby": [
+        "David Miller",
+        "Sarah Chen"
+      ],
+      "location": "Sector 4 - Power Hub"
+    },
+    {
+      "sol": 1,
+      "alarm_id": "alarm_2",
+      "nearby": [
+        "David Miller"
+      ],
+      "location": "Exterior Array Junction"
+    },
+    {
+      "sol": 2,
+      "alarm_id": "alarm_3",
+      "nearby": [
+        "David Miller",
+        "Dr. Marcus Cole"
+      ],
+      "location": "Life Support Bay A"
+    },
+    {
+      "sol": 2,
+      "alarm_id": "alarm_4",
+      "nearby": [
+        "David Miller"
+      ],
+      "location": "Life Support Ducting"
+    },
+    {
+      "sol": 3,
+      "alarm_id": "alarm_5",
+      "nearby": [
+        "David Miller"
+      ],
+      "location": "Life Support Main Bay"
+    },
+    {
+      "sol": 3,
+      "alarm_id": "alarm_6",
+      "nearby": [
+        "David Miller"
+      ],
+      "location": "Power Hub Sub-level"
+    },
+    {
+      "sol": 4,
+      "alarm_id": "alarm_7",
+      "nearby": [
+        "David Miller",
+        "Sarah Chen"
+      ],
+      "location": "Engineering Distribution"
+    },
+    {
+      "sol": 4,
+      "alarm_id": "alarm_8",
+      "nearby": [
+        "David Miller"
+      ],
+      "location": "Life Support Sensor Hub"
+    },
+    {
+      "sol": 5,
+      "alarm_id": "alarm_9",
+      "nearby": [
+        "Alex Reed"
+      ],
+      "location": "Comms Array"
+    }
+  ],
+  "suspicious_activities": [],
+  "evidence_ids": [
+    "ev_sol1_relay",
+    "ev_sol2_valve",
+    "ev_sol3_cut",
+    "ev_sol4_eva",
+    "ev_sol5_badge"
+  ],
+  "suspect_scores": {
+    "David Miller": 38.0,
+    "Sarah Chen": 4.0,
+    "Dr. Marcus Cole": 2.0,
+    "Alex Reed": 2.0
+  },
+  "previous_decisions": [
+    {
+      "sol": 1,
+      "actions": [
+        {
+          "action": "repair",
+          "target": "battery_bank",
+          "kits": 1
+        }
+      ],
+      "reason": "Repair battery_bank to prevent thermal runaway and preserve power for life support.",
+      "prime_suspect": "David Miller",
+      "evidence": [
+        "alarm_1"
+      ]
+    },
+    {
+      "sol": 2,
+      "actions": [
+        {
+          "action": "repair",
+          "target": "oxygen_generator",
+          "kits": 1
+        }
+      ],
+      "reason": "Repairing the oxygen_generator with 1 kit stops the critical leak and prevents CO\u2082 buildup, ensuring crew survival while preserving power and kit resources.",
+      "prime_suspect": "David Miller",
+      "evidence": [
+        "alarm_3"
+      ]
+    },
+    {
+      "sol": 3,
+      "actions": [
+        {
+          "action": "repair",
+          "target": "oxygen_generator",
+          "kits": 1
+        }
+      ],
+      "reason": "Repairing the oxygen_generator with one kit sacrifices secondary power to ensure breathable air for crew survival.",
+      "prime_suspect": "David Miller",
+      "evidence": [
+        "alarm_5"
+      ]
+    },
+    {
+      "sol": 4,
+      "actions": [
+        {
+          "action": "repair",
+          "target": "oxygen_sensor",
+          "kits": 1
+        },
+        {
+          "action": "repair",
+          "target": "electrical_grid",
+          "kits": 1
+        }
+      ],
+      "reason": "Repairing the oxygen sensor corrects critical hypoxia risk while fixing the electrical grid prevents power loss and equipment damage, ensuring crew survival with available kits.",
+      "prime_suspect": "David Miller",
+      "evidence": [
+        "alarm_1",
+        "alarm_2"
+      ]
+    },
+    {
+      "sol": 5,
+      "actions": [],
+      "reason": "No repair kits remaining. Conserving resources and monitoring telemetry.",
+      "prime_suspect": "David Miller",
+      "evidence": [
+        "alarm_1",
+        "alarm_2",
+        "alarm_3",
+        "alarm_4"
+      ]
+    }
+  ],
+  "remaining_repair_kits": 0,
+  "mission_history": [
+    {
+      "sol": 1,
+      "decision": {
+        "sol": 1,
+        "actions": [
+          {
+            "action": "repair",
+            "target": "battery_bank",
+            "kits": 1
+          }
+        ],
+        "reason": "Repair battery_bank to prevent thermal runaway and preserve power for life support.",
+        "prime_suspect": "David Miller",
+        "evidence": [
+          "alarm_1"
+        ]
+      },
+      "result": {
+        "success": true,
+        "sol": 1,
+        "next_sol": 2,
+        "crew_alive": true,
+        "repair_kits_remaining": 4,
+        "resources": {
+          "oxygen": 85.0,
+          "oxygen_consumption_rate": 15.0,
+          "oxygen_sols_remaining": 5.67,
+          "power": 90.0,
+          "power_consumption_rate": 10.0,
+          "power_sols_remaining": 9.0,
+          "repair_kits": 4
+        },
+        "message": "Sol 1 successfully completed. Advancing to Sol 2."
+      }
+    },
+    {
+      "sol": 2,
+      "decision": {
+        "sol": 2,
+        "actions": [
+          {
+            "action": "repair",
+            "target": "oxygen_generator",
+            "kits": 1
+          }
+        ],
+        "reason": "Repairing the oxygen_generator with 1 kit stops the critical leak and prevents CO\u2082 buildup, ensuring crew survival while preserving power and kit resources.",
+        "prime_suspect": "David Miller",
+        "evidence": [
+          "alarm_3"
+        ]
+      },
+      "result": {
+        "success": true,
+        "sol": 2,
+        "next_sol": 3,
+        "crew_alive": true,
+        "repair_kits_remaining": 3,
+        "resources": {
+          "oxygen": 80.0,
+          "oxygen_consumption_rate": 10.0,
+          "oxygen_sols_remaining": 8.0,
+          "power": 80.0,
+          "power_consumption_rate": 10.0,
+          "power_sols_remaining": 8.0,
+          "repair_kits": 3
+        },
+        "message": "Sol 2 successfully completed. Advancing to Sol 3."
+      }
+    },
+    {
+      "sol": 3,
+      "decision": {
+        "sol": 3,
+        "actions": [
+          {
+            "action": "repair",
+            "target": "oxygen_generator",
+            "kits": 1
+          }
+        ],
+        "reason": "Repairing the oxygen_generator with one kit sacrifices secondary power to ensure breathable air for crew survival.",
+        "prime_suspect": "David Miller",
+        "evidence": [
+          "alarm_5"
+        ]
+      },
+      "result": {
+        "success": true,
+        "sol": 3,
+        "next_sol": 4,
+        "crew_alive": true,
+        "repair_kits_remaining": 2,
+        "resources": {
+          "oxygen": 75.0,
+          "oxygen_consumption_rate": 10.0,
+          "oxygen_sols_remaining": 7.5,
+          "power": 50.0,
+          "power_consumption_rate": 30.0,
+          "power_sols_remaining": 1.67,
+          "repair_kits": 2
+        },
+        "message": "Sol 3 successfully completed. Advancing to Sol 4."
+      }
+    },
+    {
+      "sol": 4,
+      "decision": {
+        "sol": 4,
+        "actions": [
+          {
+            "action": "repair",
+            "target": "oxygen_sensor",
+            "kits": 1
+          },
+          {
+            "action": "repair",
+            "target": "electrical_grid",
+            "kits": 1
+          }
+        ],
+        "reason": "Repairing the oxygen sensor corrects critical hypoxia risk while fixing the electrical grid prevents power loss and equipment damage, ensuring crew survival with available kits.",
+        "prime_suspect": "David Miller",
+        "evidence": [
+          "alarm_1",
+          "alarm_2"
+        ]
+      },
+      "result": {
+        "success": true,
+        "sol": 4,
+        "next_sol": 5,
+        "crew_alive": true,
+        "repair_kits_remaining": 0,
+        "resources": {
+          "oxygen": 70.0,
+          "oxygen_consumption_rate": 10.0,
+          "oxygen_sols_remaining": 7.0,
+          "power": 33.0,
+          "power_consumption_rate": 22.0,
+          "power_sols_remaining": 1.5,
+          "repair_kits": 0
+        },
+        "message": "Sol 4 successfully completed. Advancing to Sol 5."
+      }
+    },
+    {
+      "sol": 5,
+      "decision": {
+        "sol": 5,
+        "actions": [],
+        "reason": "No repair kits remaining. Conserving resources and monitoring telemetry.",
+        "prime_suspect": "David Miller",
+        "evidence": [
+          "alarm_1",
+          "alarm_2",
+          "alarm_3",
+          "alarm_4"
+        ]
+      },
+      "result": {
+        "success": true,
+        "sol": 5,
+        "mission_complete": true,
+        "crew_alive": true,
+        "traitor_identified": true,
+        "traitor_name": "David Miller",
+        "accused": "David Miller",
+        "resources": {
+          "oxygen": 60.0,
+          "oxygen_consumption_rate": 10.0,
+          "oxygen_sols_remaining": 6.0,
+          "power": 11.0,
+          "power_consumption_rate": 22.0,
+          "power_sols_remaining": 0.5,
+          "repair_kits": 0
+        },
+        "message": "MISSION SUCCESSFUL! Rescue ship arrived at Sol 6. Crew survived. Traitor accusation: David Miller (CORRECT)."
+      }
+    }
+  ]
+}
