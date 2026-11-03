@@ -126,19 +126,19 @@
   ],
   "power_report": {
     "system": "power",
-    "assessment": "Battery bank is low relative to consumption, risking depletion before next recharge cycle.",
-    "severity": "MEDIUM",
-    "recommended_target": "battery_bank",
+    "assessment": "Battery bank at 33 units with consumption of 22 units/sol indicates rapid depletion; solar generation data missing, but likely insufficient to sustain current load.",
+    "severity": "HIGH",
+    "recommended_target": "solar_panels",
     "kits_required": 1,
-    "power_risk": "Potential power outage if battery bank discharges fully before solar recharge."
+    "power_risk": "Rapid battery depletion could lead to power failure and loss of critical systems."
   },
   "life_report": {
     "system": "life_support",
-    "assessment": "Oxygen level at 70 units with consumption of 10 units/sol indicates sufficient reserves for several sols; no alarms present.",
+    "assessment": "Oxygen level at 70 units with a consumption rate of 10 units/sol indicates a projected reserve of approximately 7 sols before depletion. No alarms are active, suggesting all systems are currently functioning within acceptable parameters.",
     "severity": "LOW",
     "recommended_target": "none",
     "kits_required": 0,
-    "survival_risk": "Crew faces minimal risk of asphyxiation; life support systems operating within safe parameters."
+    "survival_risk": "Oxygen levels are within safe limits; no immediate risk of crew asphyxiation. Continue routine monitoring."
   },
   "system_failures": [],
   "crew_positions": [
@@ -280,10 +280,11 @@
           "kits": 1
         }
       ],
-      "reason": "Repair battery_bank to prevent thermal runaway and preserve power for life support.",
+      "reason": "Repair battery_bank to prevent thermal runaway and preserve power, prioritizing immediate safety over solar array output drop.",
       "prime_suspect": "David Miller",
       "evidence": [
-        "alarm_1"
+        "alarm_1",
+        "alarm_2"
       ]
     },
     {
@@ -295,10 +296,11 @@
           "kits": 1
         }
       ],
-      "reason": "Repairing the oxygen_generator with 1 kit stops the critical leak and prevents CO\u2082 buildup, ensuring crew survival while preserving power and kit resources.",
+      "reason": "Repair oxygen_generator with 1 kit to fix critical leak and prevent CO2 buildup, preserving crew oxygen and health.",
       "prime_suspect": "David Miller",
       "evidence": [
-        "alarm_3"
+        "alarm_3",
+        "alarm_4"
       ]
     },
     {
@@ -310,7 +312,7 @@
           "kits": 1
         }
       ],
-      "reason": "Repairing the oxygen_generator with one kit sacrifices secondary power to ensure breathable air for crew survival.",
+      "reason": "Repairing oxygen_generator with 1 kit sacrifices secondary power to ensure breathable air for crew survival.",
       "prime_suspect": "David Miller",
       "evidence": [
         "alarm_5"
@@ -330,7 +332,7 @@
           "kits": 1
         }
       ],
-      "reason": "Repairing the oxygen sensor corrects critical hypoxia risk while fixing the electrical grid prevents power loss and equipment damage, ensuring crew survival with available kits.",
+      "reason": "Repair the oxygen sensor to ensure accurate oxygen levels and the electrical grid to prevent surge damage, using both kits to maintain life support and power safety.",
       "prime_suspect": "David Miller",
       "evidence": [
         "alarm_1",
@@ -340,13 +342,14 @@
     {
       "sol": 5,
       "actions": [],
-      "reason": "No repair kits remaining. Conserving resources and monitoring telemetry.",
+      "reason": "No repair kits available, cannot perform repairs; survival risk remains but no action possible.",
       "prime_suspect": "David Miller",
       "evidence": [
         "alarm_1",
         "alarm_2",
         "alarm_3",
-        "alarm_4"
+        "alarm_4",
+        "alarm_5"
       ]
     }
   ],
@@ -363,10 +366,11 @@
             "kits": 1
           }
         ],
-        "reason": "Repair battery_bank to prevent thermal runaway and preserve power for life support.",
+        "reason": "Repair battery_bank to prevent thermal runaway and preserve power, prioritizing immediate safety over solar array output drop.",
         "prime_suspect": "David Miller",
         "evidence": [
-          "alarm_1"
+          "alarm_1",
+          "alarm_2"
         ]
       },
       "result": {
@@ -398,10 +402,11 @@
             "kits": 1
           }
         ],
-        "reason": "Repairing the oxygen_generator with 1 kit stops the critical leak and prevents CO\u2082 buildup, ensuring crew survival while preserving power and kit resources.",
+        "reason": "Repair oxygen_generator with 1 kit to fix critical leak and prevent CO2 buildup, preserving crew oxygen and health.",
         "prime_suspect": "David Miller",
         "evidence": [
-          "alarm_3"
+          "alarm_3",
+          "alarm_4"
         ]
       },
       "result": {
@@ -433,7 +438,7 @@
             "kits": 1
           }
         ],
-        "reason": "Repairing the oxygen_generator with one kit sacrifices secondary power to ensure breathable air for crew survival.",
+        "reason": "Repairing oxygen_generator with 1 kit sacrifices secondary power to ensure breathable air for crew survival.",
         "prime_suspect": "David Miller",
         "evidence": [
           "alarm_5"
@@ -473,7 +478,7 @@
             "kits": 1
           }
         ],
-        "reason": "Repairing the oxygen sensor corrects critical hypoxia risk while fixing the electrical grid prevents power loss and equipment damage, ensuring crew survival with available kits.",
+        "reason": "Repair the oxygen sensor to ensure accurate oxygen levels and the electrical grid to prevent surge damage, using both kits to maintain life support and power safety.",
         "prime_suspect": "David Miller",
         "evidence": [
           "alarm_1",
@@ -503,13 +508,14 @@
       "decision": {
         "sol": 5,
         "actions": [],
-        "reason": "No repair kits remaining. Conserving resources and monitoring telemetry.",
+        "reason": "No repair kits available, cannot perform repairs; survival risk remains but no action possible.",
         "prime_suspect": "David Miller",
         "evidence": [
           "alarm_1",
           "alarm_2",
           "alarm_3",
-          "alarm_4"
+          "alarm_4",
+          "alarm_5"
         ]
       },
       "result": {
